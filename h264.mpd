@@ -1,47 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Generated with https://github.com/google/shaka-packager version v2.4.1-c731217-release-->
-<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd" xmlns:cenc="urn:mpeg:cenc:2013" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011" minBufferTime="PT2S" type="static" mediaPresentationDuration="PT7.066666603088379S">
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011" minBufferTime="PT2S" type="static" mediaPresentationDuration="PT7.066666603088379S">
   <Period id="0">
     <AdaptationSet id="0" contentType="video" width="1920" height="1080" frameRate="90000/3000" subsegmentAlignment="true" par="16:9">
-      <ContentProtection value="cenc" schemeIdUri="urn:mpeg:dash:mp4protection:2011" cenc:default_KID="6d76f25c-b17f-5e16-b8ea-ef6bbf582d8e"/>
-      <ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed">
-        <cenc:pssh>AAAAN3Bzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABciD3Rlc3QgY29udGVudCBpZEjj3JWbBg==</cenc:pssh>
-      </ContentProtection>
-      <Representation id="0" bandwidth="337817" codecs="avc1.640028" mimeType="video/mp4" sar="1:1">
-        <BaseURL>h264_1080p.mp4</BaseURL>
-        <SegmentBase indexRange="1137-1180" timescale="90000">
-          <Initialization range="0-1136"/>
-        </SegmentBase>
-      </Representation>
-      <Representation id="1" bandwidth="337817" codecs="avc1.640028" mimeType="video/mp4" sar="1:1">
+      <Representation id="0" bandwidth="371562" codecs="avc1.640028" mimeType="video/mp4" sar="1:1">
         <BaseURL>h264_720p.mp4</BaseURL>
-        <SegmentBase indexRange="1137-1180" timescale="90000">
-          <Initialization range="0-1136"/>
+        <SegmentBase indexRange="864-919" timescale="90000">
+          <Initialization range="0-863"/>
         </SegmentBase>
       </Representation>
-      <Representation id="2" bandwidth="337817" codecs="avc1.640028" mimeType="video/mp4" sar="1:1">
+      <Representation id="1" bandwidth="371562" codecs="avc1.640028" mimeType="video/mp4" sar="1:1">
+        <BaseURL>h264_1080p.mp4</BaseURL>
+        <SegmentBase indexRange="864-919" timescale="90000">
+          <Initialization range="0-863"/>
+        </SegmentBase>
+      </Representation>
+      <Representation id="2" bandwidth="371562" codecs="avc1.640028" mimeType="video/mp4" sar="1:1">
         <BaseURL>h264_480p.mp4</BaseURL>
-        <SegmentBase indexRange="1137-1180" timescale="90000">
-          <Initialization range="0-1136"/>
+        <SegmentBase indexRange="864-919" timescale="90000">
+          <Initialization range="0-863"/>
         </SegmentBase>
       </Representation>
-      <Representation id="3" bandwidth="337817" codecs="avc1.640028" mimeType="video/mp4" sar="1:1">
+      <Representation id="3" bandwidth="371562" codecs="avc1.640028" mimeType="video/mp4" sar="1:1">
         <BaseURL>h264_360p.mp4</BaseURL>
-        <SegmentBase indexRange="1137-1180" timescale="90000">
-          <Initialization range="0-1136"/>
+        <SegmentBase indexRange="864-919" timescale="90000">
+          <Initialization range="0-863"/>
         </SegmentBase>
       </Representation>
     </AdaptationSet>
     <AdaptationSet id="1" contentType="audio" subsegmentAlignment="true">
-      <ContentProtection value="cenc" schemeIdUri="urn:mpeg:dash:mp4protection:2011" cenc:default_KID="f3c5e036-1e66-54b2-8f80-49c778b23946"/>
-      <ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed">
-        <cenc:pssh>AAAAN3Bzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABciD3Rlc3QgY29udGVudCBpZEjj3JWbBg==</cenc:pssh>
-      </ContentProtection>
-      <Representation id="4" bandwidth="127713" codecs="mp4a.40.2" mimeType="audio/mp4" audioSamplingRate="44100">
+      <Representation id="4" bandwidth="127883" codecs="mp4a.40.2" mimeType="audio/mp4" audioSamplingRate="44100">
         <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
         <BaseURL>audio.mp4</BaseURL>
-        <SegmentBase indexRange="967-1022" timescale="44100">
-          <Initialization range="0-966"/>
+        <SegmentBase indexRange="757-812" timescale="44100">
+          <Initialization range="0-756"/>
         </SegmentBase>
       </Representation>
     </AdaptationSet>
